@@ -2,18 +2,9 @@ package database;
 
 public class value {
 	private int id;
-	private String first_name;
-	private String gender;
-	private String currency;
-	private String language;
-	
-	public void clear() {
-		this.currency = null;
-		this.first_name = null;
-		this.gender = null;
-		this.id = 0;
-		this.language = null;
-	}
+	private String loginusr;
+	private String loginpwd;
+	private String job;
 	
 	public int getId() {
 		return id;
@@ -21,29 +12,23 @@ public class value {
 	public void setId(int id) {
 		this.id = id;
 	}
-	public String getFirst_name() {
-		return first_name;
+	public String getLoginusr() {
+		return loginusr;
 	}
-	public void setFirst_name(String first_name) {
-		this.first_name = first_name;
+	public void setLoginusr(String loginusr) {
+		this.loginusr = loginusr;
 	}
-	public String getGender() {
-		return gender;
+	public String getLoginpwd() {
+		return loginpwd;
 	}
-	public void setGender(String gender) {
-		this.gender = gender;
+	public void setLoginpwd(String loginpwd) {
+		this.loginpwd = loginpwd;
 	}
-	public String getCurrency() {
-		return currency;
+	public String getJob() {
+		return job;
 	}
-	public void setCurrency(String currency) {
-		this.currency = currency;
-	}
-	public String getLanguage() {
-		return language;
-	}
-	public void setLanguage(String language) {
-		this.language = language;
+	public void setJob(String job) {
+		this.job = job;
 	}
 
 }

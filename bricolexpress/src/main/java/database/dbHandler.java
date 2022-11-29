@@ -31,19 +31,17 @@ public class dbHandler {
 			{
 				value val = new value();
 				val.setId(rs.getInt("id"));
-				val.setFirst_name(rs.getString("first_name"));
-				val.setCurrency(rs.getString("currency"));
-				val.setGender(rs.getString("gender"));
-				val.setLanguage(rs.getString("language"));
+				val.setLoginusr(rs.getString("loginusr"));
+				val.setLoginpwd(rs.getString("loginpwd"));
 				
 				listValeurs.add(val);
-				System.out.println(listValeurs.get(i).getId());
-				i++;
+				//System.out.println(listValeurs.get(i).getId());
+				//i++;
 				//val = null;
 			}
 			
 			for(int j = 0; j < 100; j++) {
-				System.out.println(listValeurs);
+				System.out.println(listValeurs.get(j).getLoginusr());
 			}
 			conn.close();
 		}
@@ -51,7 +49,33 @@ public class dbHandler {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		}
 		
-	}
-
+		public boolean checkLogin(String usr, String pwd) {
+			
+			boolean res = false;
+			String query = "SELECT * FROM users WHERE loginusr = '" + usr + "' AND loginpwd = '" + pwd + "' ";
+			
+			try {
+				
+				Connection conn = DriverManager.getConnection(this.link, this.user, this.pwd);
+				Statement stmt = conn.createStatement();
+				ResultSet rs = stmt.executeQuery(query);
+				//value val = new value();
+				//int i = 0;
+				if(rs.next())
+				{
+					res = true;
+				}
+				conn.close();
+				
+			}
+			catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			return res;
+			
+		}
+		
 }
