@@ -32,7 +32,7 @@ public class test extends HttpServlet {
 		dbHandler db;
 		try {
 			db = new dbHandler("mysql", "localhost", 3306, "sys", "root", "root");
-			db.loadingQuery("select * from sample");
+			db.loadingQuery("select * from users");
 		} catch (ClassNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

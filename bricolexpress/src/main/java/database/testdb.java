@@ -8,6 +8,6 @@ public class testdb {
 	public static void main(String[] args) throws ClassNotFoundException, IOException {
 		dbHandler db = new dbHandler("mysql", "localhost", 3306, "sys", "root", "root");
 		
-		db.loadingQuery("select * from sample");
+		db.loadingQuery("select * from users");
 	}
 }
