@@ -1,0 +1,276 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+
+}
+html {
+  font-size: 62.5%;
+}
+li{
+    font-size: 1.8rem;
+    display: block;
+    margin-bottom: 4px;
+    font-weight: 700;
+    
+}
+li a{
+    color:#FFFFFF;
+    text-decoration: none;
+    background-color: #14703e;
+    border-radius: 30px;
+    border: none;
+    display: inline-block;
+    width: 115%;
+
+}
+.main-head{
+    background:#10957B;
+    color:green;
+}
+nav {
+    min-height: 10vh;
+    display:flex;
+}
+nav ul{
+    color:#FFFFFF;
+    display:flex;
+    flex: 1 1 40rem;
+    justify-content: space-around;
+    align-items: center ;
+    list-style: none;
+}
+
+h2{
+    position: absolute;
+    width: 777px;
+    height: 87px;
+    left: 282px;
+    top: 134px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+    
+    color: #136656;
+    
+}
+.b1 p{
+    position: absolute;
+width: 322px;
+height: 44px;
+left: -10px;
+top: 255px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 25px;
+line-height: 30px;
+text-align: center;
+
+color: #000000;
+
+}
+.b1 input{
+    box-sizing: border-box;
+
+position: absolute;
+width: 400px;
+height: 57px;
+left: 253px;
+top: 242px;
+
+background: #FFFFFF;
+border: 5px solid #000000;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 30px;
+}
+.b2 p{
+    
+position: absolute;
+width: 322px;
+height: 44px;
+left: 605px;
+top: 253px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 25px;
+line-height: 30px;
+text-align: center;
+
+color: #000000;
+
+}
+.b2 input{
+    box-sizing: border-box;
+
+position: absolute;
+width: 400px;
+height: 57px;
+left: 883px;
+top: 240px;
+
+background: #FFFFFF;
+border: 5px solid #000000;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 30px;
+}
+.b3 p{
+    position: absolute;
+width: 322px;
+height: 44px;
+left: -9px;
+top: 361px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 25px;
+line-height: 30px;
+text-align: center;
+
+color: #000000;
+
+}
+.b3 input{
+    box-sizing: border-box;
+
+position: absolute;
+width: 400px;
+height: 57px;
+left: 253px;
+top: 348px;
+
+background: #FFFFFF;
+border: 5px solid #000000;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 30px;
+}
+
+.b4 p{
+    position: absolute;
+    width: 322px;
+    height: 44px;
+    left: 605px;
+    top: 361px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+    
+    color: #000000;
+    
+
+}
+.b4 input{
+box-sizing: border-box;
+
+position: absolute;
+width: 400px;
+height: 57px;
+left: 883px;
+top: 348px;
+
+background: #FFFFFF;
+border: 5px solid #000000;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 30px;
+}
+.b5 p{
+    position: absolute;
+    width: 322px;
+    height: 44px;
+    left: 238px;
+    top: 479px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+    
+    color: #000000;
+    
+}
+.b5 input{
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 583px;
+    height: 57px;
+    left: 620px;
+    top: 450px;
+    
+    background: #FFFFFF;
+    border: 5px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+}
+.b6 p{
+    position: absolute;
+width: 362px;
+height: 44px;
+left: 243px;
+top: 579px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 25px;
+line-height: 30px;
+text-align: center;
+
+color: #000000;
+
+}
+.b6 input{
+    box-sizing: border-box;
+
+position: absolute;
+width: 583px;
+height: 57px;
+left: 626px;
+top: 561px;
+
+background: #FFFFFF;
+border: 5px solid #000000;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 30px;
+}
+.sin button{
+    position: absolute;
+width: 266px;
+height: 57px;
+left: 1033px;
+top: 660px;
+
+background: #10957B;
+border-radius: 60px;
+}
+button a{
+    color:#FFFFFF;
+    text-decoration: none;
+    border-radius: 30px;
+    border: none;
+    display: inline-block;
+    width: 115%;
+    font-size:40px ;
+    font-weight: 700;
+    line-height: 48px;
+}
+
+
+
+
+
+
