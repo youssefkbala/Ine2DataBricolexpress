@@ -51,31 +51,67 @@ public class dbHandler {
 		}
 		}
 		
-		public boolean checkLogin(String usr, String pwd) {
+	public boolean checkLogin(String usr, String pwd) {
+		
+		boolean res = false;
+		String query = "SELECT * FROM users WHERE loginusr = '" + usr + "' AND loginpwd = '" + pwd + "' ";
+		
+		try {
 			
-			boolean res = false;
-			String query = "SELECT * FROM users WHERE loginusr = '" + usr + "' AND loginpwd = '" + pwd + "' ";
-			
-			try {
-				
-				Connection conn = DriverManager.getConnection(this.link, this.user, this.pwd);
-				Statement stmt = conn.createStatement();
-				ResultSet rs = stmt.executeQuery(query);
-				//value val = new value();
-				//int i = 0;
-				if(rs.next())
-				{
-					res = true;
-				}
-				conn.close();
-				
+			Connection conn = DriverManager.getConnection(this.link, this.user, this.pwd);
+			Statement stmt = conn.createStatement();
+			ResultSet rs = stmt.executeQuery(query);
+			//value val = new value();
+			//int i = 0;
+			if(rs.next())
+			{
+				res = true;
 			}
-			catch (SQLException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-			return res;
+			conn.close();
 			
 		}
+		catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return res;
+		
+	}
+public void addProfile(String fname, String pwd, int phone,String email, String address) {
+		
+		String query = "insert into profiles (full_name, password, phone, email, address) values ('"+ fname +"', '"+ pwd +"', '"+ phone +"','"+ email +"','"+ address +"');";
+		try {
+			
+			Connection conn = DriverManager.getConnection(this.link, this.user, this.pwd);
+			Statement stmt = conn.createStatement();
+			int rs = stmt.executeUpdate(query);
+			System.out.println(rs);
+			conn.close();
+			
+		}
+		catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+	public void addUser(String usr, String pwd, String job) {
+		
+		String query = "insert into users (loginusr, loginpwd , job) values ('"+ usr +"', '"+ pwd +"', '"+ job +"');";
+		
+		try {
+			
+			Connection conn = DriverManager.getConnection(this.link, this.user, this.pwd);
+			Statement stmt = conn.createStatement();
+			int rs = stmt.executeUpdate(query);
+			System.out.println(rs);
+			conn.close();
+			
+		}
+		catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
 		
 }
