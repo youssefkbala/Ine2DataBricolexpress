@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+
+}
+html {
+  font-size: 62.5%;
+}
+li{
+    font-size: 1.8rem;
+    display: block;
+    margin-bottom: 4px;
+    font-weight: 700;
+    
+}
+a{
+    color:#FFFFFF;
+    text-decoration: none;
+    background-color: #14703e;
+    border-radius: 30px;
+    border: none;
+    display: inline-block;
+    width: 115%;
+
+}
+.main-head{
+    background:#10957B;
+    color:green;
+}
+nav {
+    min-height: 10vh;
+    display:flex;
+}
+nav ul{
+    color:#FFFFFF;
+    display:flex;
+    flex: 1 1 40rem;
+    justify-content: space-around;
+    align-items: center ;
+    list-style: none;
+}
+
+h2{
+    position: absolute;
+    width: 777px;
+    height: 87px;
+    left: 282px;
+    top: 134px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+    
+    color: #136656;
+    
+}
+.bu input{
+    box-sizing: border-box;
+
+position: absolute;
+width: 457px;
+height: 368px;
+left: 106px;
+top: 260px;
+
+background: #136656;
+border: 5px solid #000000;
+border-radius: 60px;
+
+
+}
+.bu h2{
+    position: absolute;
+width: 344px;
+height: 69px;
+left: 170px;
+top: 303px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 36px;
+
+color: #FFFFFF;
+}
+.bu h3{
+    position: absolute;
+width: 349px;
+height: 170px;
+left: 157px;
+top: 385px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 23px;
+line-height: 28px;
+
+color: #FFFFFF;
+
+
+}
+.b2 input{
+    box-sizing: border-box;
+
+position: absolute;
+width: 457px;
+height: 368px;
+left: 778px;
+top: 260px;
+
+background: #136656;
+border: 5px solid #000000;
+border-radius: 60px;
+}
+.b2 h1{
+    position: absolute;
+width: 383px;
+height: 36px;
+left: 819px;
+top: 301px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 36px;
+
+color: #FFFFFF;
+
+}
+.b2 h2{
+    position: absolute;
+    width: 349px;
+    height: 170px;
+    left: 848px;
+    top: 372px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 28px;
+    
+    color: #FFFFFF;
+}

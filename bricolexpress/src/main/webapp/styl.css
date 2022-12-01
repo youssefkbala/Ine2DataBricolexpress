@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+
+}
+html {
+  font-size: 62.5%;
+}
+li{
+    font-size: 1.8rem;
+    display: block;
+    margin-bottom: 4px;
+    font-weight: 700;
+    
+}
+a{
+    color:#FFFFFF;
+    text-decoration: none;
+    background-color: #14703e;
+    border-radius: 30px;
+    border: none;
+    display: inline-block;
+    width: 115%;
+
+}
+.main-head{
+    background:#10957B;
+    color:green;
+}
+nav {
+    min-height: 10vh;
+    display:flex;
+}
+nav ul{
+    color:#FFFFFF;
+    display:flex;
+    flex: 1 1 40rem;
+    justify-content: space-around;
+    align-items: center ;
+    list-style: none;
+}
+img{
+
+    width:1300px;
+}
+.cyt img{
+    width: 600px;
+    height: 500px;
+}
+.title{
+    position: absolute;
+    top: 18%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FFFFFF;
+    font-size: 20px;
+
+}
+h2{
+    position: absolute;
+
+    top: 29%;
+    left: 20%;
+    right: 10%;
+    color: #FFFFFF;
+    font-size: 25px;
+}
+button
+{
+    font-size: 1.8rem;
+color:black;
+    position: absolute;
+    border-radius: 12px;
+background-color: #14703e;
+  top:70%;
+  left: 20%;
+ font-weight: bold;
+ padding: 13px 30px;
+ border-radius: 30x;
+box-sizing:border-box;
+
+}
+.bt button{
+    position: absolute;
+    border-radius: 12px;
+background-color: #14703e;
+  top:70%;
+  left: 70%;
+ font-weight: bold;
+ padding: 13px 30px;
+ border-radius: 30x;
+box-sizing:border-box;
+}
+.cut{
+    top:unset;
+    padding: auto;    
+}
